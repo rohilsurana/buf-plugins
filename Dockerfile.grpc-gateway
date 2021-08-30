@@ -10,7 +10,7 @@ RUN go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway
 FROM scratch
 
 # Runtime dependencies
-LABEL "build.buf.plugins.runtime_library_versions.0.name"="github.com/grpc-ecosystem/grpc-gateway"
+LABEL "build.buf.plugins.runtime_library_versions.0.name"="github.com/grpc-ecosystem/grpc-gateway/v2"
 LABEL "build.buf.plugins.runtime_library_versions.0.version"="v2.5.0"
 LABEL "build.buf.plugins.runtime_library_versions.1.name"="google.golang.org/protobuf"
 LABEL "build.buf.plugins.runtime_library_versions.1.version"="v1.27.1"
